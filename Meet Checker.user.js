@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.5
 // @description  Check to see if the Google Meet is open; sends alert to let you know if it is open
-// @author       Liandro Feliz
+// @author       Liandro FeliZ
 // @match        https://meet.google.com/*
 // @grant        none
 // @updateURL    https://github.com/liandro123/google-meet-checker/raw/main/Meet%20Checker.user.js
