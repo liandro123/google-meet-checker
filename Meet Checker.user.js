@@ -14,7 +14,7 @@
     'use strict';
     var $ = window.jQuery;
     setTimeout(function(){checkMeet(); }, 3000);
-    var ding = new Audio("https://ipfs.io/ipfs/QmbLjsXFth376jaPqCx4LWk6JfqBw3cwA4gdWgGNRhGjSv?filename=RedAlert.mp3");
+    var ding = new Audio("https://github.com/liandro123/google-meet-checker/blob/main/RedAlert.mp3");
     function checkMeet() {
         // Plays audio when room is ready
         if ($('.JMAjle').length != 0 || $('.GN4RFc').length != 0) {
