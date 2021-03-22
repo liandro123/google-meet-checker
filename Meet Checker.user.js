@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Meet Checker
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  Check to see if the Google Meet is open; sends alert to let you know if it is open
 // @author       Liandro Feliz
 // @match        https://meet.google.com/*
