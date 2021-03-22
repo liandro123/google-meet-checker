@@ -7,6 +7,7 @@
 // @match        https://meet.google.com/*
 // @grant        none
 // @updateURL    https://github.com/liandro123/google-meet-checker/raw/main/Meet%20Checker.user.js
+// @downloadURL  https://github.com/liandro123/google-meet-checker/raw/main/Meet%20Checker.user.js
 // @require      https://code.jquery.com/jquery-3.6.0.min.js
 // ==/UserScript==
 
