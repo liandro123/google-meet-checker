@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Meet Checker
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      2.0
 // @description  Check to see if the Google Meet is open; sends alert to let you know if it is open
 // @author       Liandro Feliz
 // @match        https://meet.google.com/*
@@ -17,10 +17,16 @@
     setTimeout(function(){checkMeet(); }, 3000);
     var ding = new Audio("https://github.com/liandro123/google-meet-checker/blob/main/RedAlert.mp3?raw=true");
     function checkMeet() {
-        // Plays audio when room is ready
-        if ($('.JMAjle').length != 0 || $('.GN4RFc').length != 0) {
+        // Plays audio when room is ready; Ignore refresh when needed
+        if ($('div.I98jWb').length != 0) {
+            return;
+        } else if ($('.JMAjle').length != 0 || $('.GN4RFc').length != 0) {
             ding.play();
             console.log("audio played");
-        } else {window.location.reload(); console.log("refreshed");}
+        }
+        else {
+            window.location.reload();
+            console.log("refreshed");
+        }
     }
 })();
